@@ -14,8 +14,8 @@ square_color = (255, 255, 0)
 
 hands = mp_hands.Hands(
     model_complexity=0,
-    min_detection_confidence=0.5,
-    min_tracking_confidence=0.5)
+    min_detection_confidence=0.5,  # 置信度阈值
+    min_tracking_confidence=0.5)  # 追踪阈值
 
 # 获取摄像头视频流
 cap = cv2.VideoCapture(0)
